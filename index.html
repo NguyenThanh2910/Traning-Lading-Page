@@ -5,111 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+
  
 </head>
 
 <body>
-    <div>
-        <div class="iaaa">
-            <span >
-               
-                <a href="#">  <i>icon</i> Overview Page</a>
+    <div class="nav" id="nav">
+        <div class="nav_left">
+            <span>
+                <i class="fa-solid fa-arrow-left-long"></i>
+                <a href="#"> Overview Page</a>
             </span>
         </div>
 
-        <div>
+        <div class="nav_center">
             <button>
-                <i>Laptop</i>
+                <i class="fa-solid fa-desktop"></i>
             </button>
 
             <button>
-                <i>Tablet</i>
+                <i class="fa-solid fa-tablet-screen-button"></i>
             </button>
 
             <button>
-                <i>Iphone</i>
+                <i class="fa-solid fa-mobile-screen-button"></i>
             </button>
         </div>
-        <div>
-            <a href="">
-                <i>icon</i>
+        <div class="nav_right">
+            <a class="github" href="https://github.com/NguyenThanh2910/HTML-c-n-b-n">
+                <i class="fa-brands fa-github"></i>
             </a>
-            <a href="">
-                <i>icon</i>
+            <a class="download" href="">
+                <i class="fa-solid fa-download"></i>
                 Free Download
             </a>
-            <button>
-                <i>icon</i>
+            <button class="close">
+                x
             </button>
         </div>
 
     </div>
-    <div>
-        <nav>
-            <div></div>
-            <a>Start Bootstrap</a>
-    </div>
-    <div>
-        <ul>
-            <li>About</li>
-            <li>Service</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-        </ul>
-    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="navbar_left">
+            <a href="#"><b>Start Bootstrap</b></a>
+        </div>
+        <div class="navbar_right">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
     </nav>
     </div>
 
-    <header>
-        <div>
+    <header class="masthead" id="masthead">
+        <div class="masthead_background">
             <h1>Your Favorite Place for Free Bootstrap Themes</h1>
             <hr />
             <p>Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme
                 and start customizing, no strings attached!</p>
-            <button>FIND OUT MORE</button>
+            <button class="btn"> <a href="#about">FIND OUT MORE</a></button>
         </div>
     </header>
 
-    <section>
-        <div>
+    <section class="about" id="about">
+        <div class="about_contact">
             <h2>We've got what you need!</h2>
             <hr />
             <p>Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of
                 our open source, free to download, and easy to use themes! No strings attached!</p>
-            <button>GET STARTED</button>
+            <button><a href="#Service">GET STARTED</a></button>
         </div>
     </section>
 
-    <section>
+    <section class="service" id="Service">
         <div>
             <h1>At Your Service</h1>
             <hr>
-            <div>
-                <i>icon</i>
-                <h3>Sturdy Themes</h3>
-                <p>Sturdy Themes</p>
-            </div>
+            <div class="service_item">
+                <div class="service_card">
+                    <i class="fa-solid fa-gem"></i>
+                    <h3>Sturdy Themes</h3>
+                    <p>Our themes are updated regularly to keep them bug free!</p>
+                </div>
 
-            <div>
-                <i>icon</i>
-                <h3>Up to Date</h3>
-                <p>All dependencies are kept current to keep things fresh.</p>
-            </div>
+                <div class="service_card">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h3>Up to Date</h3>
+                    <p>All dependencies are kept current to keep things fresh.</p>
+                </div>
 
-            <div>
-                <i>icon</i>
-                <h3>Ready to Publish</h3>
-                <p>You can use this design as is, or you can make changes!</p>
-            </div>
+                <div class="service_card">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Ready to Publish</h3>
+                    <p>You can use this design as is, or you can make changes!</p>
+                </div>
 
-            <div>
-                <i>icon</i>
-                <h3>Made with Love</h3>
-                <p>Is it really open source if it's not made with love?</p>
+                <div class="service_card">
+                    <i class="fa-regular fa-heart"></i>
+                    <h3>Made with Love</h3>
+                    <p>Is it really open source if it's not made with love?</p>
+                </div>
             </div>
         </div>
     </section>
-
     <section>
         <div>
             <img src="" alt="">
@@ -197,5 +202,15 @@
     </footer>
 
 </body>
+<script>
+    document.addEventListener('scroll', function () {
+        const navbarScrolled = document.getElementById('navbar');
+        if (window.scrollY > 0) {
+            navbarScrolled.classList.add('scrolled');
+        } else {
+            navbarScrolled.classList.remove('scrolled');
+        }
+    }); 
+</script>
 
 </html>

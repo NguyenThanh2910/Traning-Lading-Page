@@ -1,0 +1,347 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgb(220, 57, 45) solid 3px;
+
+}
+
+.nav_left {
+
+
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    color: #85888E;
+    margin: 10px 0px 10px 15px;
+
+}
+
+.nav_left a {
+    color: #85888E;
+}
+
+.nav_left:hover {
+    background-color: #e5e5e5d3;
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+
+}
+
+.nav_center {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 7px;
+    margin-top: 7px;
+
+}
+
+.nav_center button {
+    margin: 0px 4px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 12px;
+    border: none;
+}
+
+.nav_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 12px;
+
+}
+
+.github {
+    color: black;
+    margin-right: 8px;
+    padding: 8px 12px;
+
+}
+
+.github:hover {
+    border: 2px solid;
+    border-radius: 3px;
+    background-color: #E8E9EA;
+    border: none;
+}
+
+.download {
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #DE463B;
+    background-color: #F2E7EB;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 10px 0px 10px 15px;
+    padding: 10px 15px;
+}
+
+.close {
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 25px;
+    width: 30px;
+    margin: 10px 0px 10px 15px;
+
+
+}
+
+.close:hover {
+    background-color: #E8E9EA;
+    border-radius: 50%;
+
+}
+
+/* Navbar */
+.navbar {
+
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: fixed;
+    top: 61px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    transition: 0.2s;
+}
+
+.navbar.scrolled {
+    background-color: #ffff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.navbar.scrolled a:hover{
+    color: #F4623A;
+}
+
+
+.navbar.scrolled a {
+    color: black;
+}
+
+.navbar_left {
+    background-color: transparent;
+    margin-left: 10rem;
+}
+
+.navbar_left a {
+    margin-right: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: x-large;
+}
+
+.navbar_right a {
+    margin-right: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: x-large;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.navbar_right {
+    margin-right: 100px;
+}
+
+.navbar_right li a {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding: 0px 16px;
+
+}
+
+/* masthead */
+.masthead {
+
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(./image/bg-masthead.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.masthead_background {
+    flex: 0 0 auto;
+       
+    text-align: center;
+    padding: 10% 25%;
+    width: 100%;
+    height: 100%;
+}
+
+.masthead_background h1 {
+    color: #ffff;
+    font-size: 3rem;
+
+}
+
+.masthead_background hr {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: #f4623a;
+    opacity: 1;
+    border: 0;
+    color: inherit;
+    border-top: 1px solid;
+}
+
+.masthead_background p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+    margin-top: 50px;
+    background-color: #fa7407;
+    color: #ffff;
+    font-weight: bold;
+}
+.btn a{
+    color: white;
+ 
+    
+}
+
+.btn:hover {
+    background-color: #a7540f;
+}
+/* about */
+.about {
+    background-color: #F4623A;
+    padding: 128px 0;
+    color: fff;
+}
+
+.about_contact {
+    text-align: center;
+    padding: 0 20%;
+    width: 100%;
+    height: 100%;
+}
+
+.about_contact h2 {
+    color: #ffff;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.about_contact hr {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: #ffff;
+    opacity: 1;
+    border: 0;
+    color: inherit;
+    border-top: 1px solid;
+}
+
+.about_contact p {
+    color: #F8BAC4;
+    font-size: 1rem;
+}
+
+.about_contact button {
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+    margin-top: 50px;
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+}
+.about_contact button a{
+    color: black;
+}
+/* service */
+.service{
+    padding: 128px 0;
+    text-align: center;
+  
+}
+.service h1{
+    font-weight: 500;
+}
+.service hr{
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: #f4623a;
+    opacity: 1;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+}
+
+.service_item{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+   margin: 40px 70px 0px 20px;
+}
+.service_card{
+    text-align: center;
+    flex: auto;
+    width: 25%;
+}
+.service_card i {
+    overflow-y: hidden;
+    color: rgb(244, 98, 58);
+    font-size: 35px ;
+}
+.service_card p{
+    color: #6c757d;
+}
