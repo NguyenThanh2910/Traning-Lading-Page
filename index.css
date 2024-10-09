@@ -14,9 +14,10 @@ a {
 ul {
     list-style-type: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
-  
+
 }
 
 
@@ -62,7 +63,7 @@ html{
     justify-content: space-evenly;
     margin-bottom: 7px;
     margin-top: 7px;
-
+    margin-left: 85px;
 }
 
 .nav_center button {
@@ -181,9 +182,10 @@ html{
 }
 
 .navbar_right {
-    margin-right: 100px;
+    margin-right: 10em;
 }
-.navbar_right li{
+
+.navbar_right li {
     float: left;
 }
 
@@ -322,9 +324,16 @@ html{
     font-weight: bold;
 }
 
+.about_contact button:hover {
+    background-color: #D3D4D5;
+}
+
 .about_contact button a {
     color: black;
+    display: block;
+
 }
+
 
 /* service */
 .service {
@@ -353,7 +362,7 @@ html{
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    margin: 40px 70px 0px 20px;
+    margin: 40px 10em 0px 10em;
 }
 
 .service_card {
@@ -557,32 +566,24 @@ footer {
 
 /* mobile */
 @media only screen and (max-width:46.1875em) {
-    .nav{
+    .nav {
         align-items: center;
-       
-       
-    }
-    .nav a{
-        white-space: nowrap;
-       
-       
+
+
     }
     .nav_center{
         display: none;
+
     }
+
     .download {
         display: none;
     }
+
     .navbar {
         background-color: #ffff;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         padding: 16px 0px;
-        position: fixed;
-    top: 60px;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    transition: 0.2s;
 
     }
 
@@ -608,7 +609,7 @@ footer {
     .navbar_right {
         display: none;
     }
-    
+
     .navbar_mobile.show {
         display: flex;
         flex-direction: column;
@@ -618,16 +619,17 @@ footer {
         max-height: 500px;
         margin-left: 50px;
         margin-top: 10px;
-        
+
     }
-    .navbar_mobile.show li{
+
+    .navbar_mobile.show li {
         margin-top: 10px;
     }
 
-    .navbar_mobile.show li a{
-        
-      
-color: #6c757d;
+    .navbar_mobile.show li a {
+
+
+        color: #6c757d;
         font-size: large;
     }
 
@@ -748,15 +750,17 @@ color: #6c757d;
     }
 
 }
-.about{
-    padding: 1;
-}
 
 
 
 
 
 @media only screen and (min-width:46.25em) and (max-width: 63.9375em) {
+   
+    .nav_center{
+        display: none;
+
+    }
     .navbar {
         background-color: #ffff;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -775,9 +779,6 @@ color: #6c757d;
         margin: 0px 16px 20px 0px;
 
     }
-    .navbar_center{
-        display: none;
-    }
 
     .navbar_right {
         display: none;
@@ -792,16 +793,17 @@ color: #6c757d;
         max-height: 500px;
         margin-left: 100px;
         margin-top: 10px;
-        
+
     }
-    .navbar_mobile.show li{
+
+    .navbar_mobile.show li {
         margin-top: 10px;
     }
 
-    .navbar_mobile.show li a{
-        
-      
-color: #6c757d;
+    .navbar_mobile.show li a {
+
+
+        color: #6c757d;
         font-size: large;
     }
 
@@ -870,5 +872,6 @@ color: #6c757d;
         margin-left: auto;
         margin-right: auto;
     }
+    
 
 }
