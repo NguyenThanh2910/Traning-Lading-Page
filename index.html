@@ -12,7 +12,7 @@
 
 <body>
     <div class="nav" id="nav">
- 
+
         <div class="nav_left">
             <span>
                 <i class="fa-solid fa-arrow-left-long"></i>
@@ -50,11 +50,25 @@
 
     <nav class="navbar" id="navbar">
         <div class="navbar_container">
-        <div class="navbar_left">
-            <a href="#">Start Bootstrap</a>
+            <div class="navbar_left">
+                <a href="#">Start Bootstrap</a>
+            </div>
+            <div class="navbar_right">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <button class="navbar_icon" id="navbar_icon">
+                <span> <i class="fa-solid fa-bars"></i></span>
+            </button>
+
         </div>
-        <div class="navbar_right" >
-            <ul>
+        <div class="navbar_mobile" id="navbar_right">
+            <ul class="mobile_show">
                 <li><a href="#about">About</a></li>
                 <li><a href="#Service">Service</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -62,33 +76,19 @@
             </ul>
         </div>
 
-        <button class="navbar_icon" id="navbar_icon">
-            <span> <i class="fa-solid fa-bars"></i></span>
-        </button>
-     
-    </div>
-    <div class="navbar_mobile" id="navbar_right">
-        <ul class="mobile_show">
-            <li><a href="#about">About</a></li>
-            <li><a href="#Service">Service</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
     </nav>
-  
+
 
     <header class="masthead" id="masthead">
         <div class="masthead_background">
             <div class="masthead_tittle">
                 <h1>Your Favorite Place for Free Bootstrap Themes</h1>
             </div>
-          
+
             <hr />
             <p>Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme
                 and start customizing, no strings attached!</p>
-            <button class="btn"> <a href="#about">FIND OUT MORE</a></button>
+            <a href="#about"><button class="btn"> FIND OUT MORE</button></a>
         </div>
     </header>
 
@@ -98,11 +98,11 @@
             <hr />
             <p>Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of
                 our open source, free to download, and easy to use themes! No strings attached!</p>
-            <button><a href="#Service">GET STARTED</a></button>
+            <a href="#service"><button>GET STARTED</button></a>
         </div>
     </section>
 
-    <section class="service" id="Service">
+    <section class="service" id="service">
         <div>
             <h1>At Your Service</h1>
             <hr>
@@ -136,79 +136,81 @@
 
     <section id="portfolio">
         <div class="portfolio">
-           
-                <div  class="portfolio_image">
-                    <a data-fancybox="gallery" class="portfolio-card" href="./image/1.jpg">
-                        <img class="card_image" src="./image/1.jpg" alt="">
-                    </a>
-                    <div class="portfolio_title">
-                        <div class="portfolio_category">Category</div>
-                        <div class="portfolio_name">Project Name</div>
-                    </div>
+
+            <div class="portfolio_image">
+                <a data-fancybox="gallery" class="portfolio-card" href="./image/1.jpg">
+                    <img class="card_image" src="./image/1.jpg" alt="">
+                </a>
+                <div class="portfolio_title">
+                    <div class="portfolio_category">Category</div>
+                    <div class="portfolio_name">Project Name</div>
                 </div>
+            </div>
 
-                <div  class="portfolio_image">
+            <div class="portfolio_image">
 
-                    <a data-fancybox="gallery" class="portfolio-card" href="./image/2.jpg">
-                        <img class="card_image" src="./image/2.jpg" alt="">
-                    </a>
-                    <div class="portfolio_title">
-                        <div class="portfolio_category">Category</div>
-                        <div class="portfolio_name">Project Name</div>
-                    </div>
+                <a data-fancybox="gallery" class="portfolio-card" href="./image/2.jpg">
+                    <img class="card_image" src="./image/2.jpg" alt="">
+                </a>
+                <div class="portfolio_title">
+                    <div class="portfolio_category">Category</div>
+                    <div class="portfolio_name">Project Name</div>
                 </div>
+            </div>
 
-                <div  class="portfolio_image">
+            <div class="portfolio_image">
 
-                    <a class="portfolio-card" href="./image/3.jpg">
-                        <img class="card_image" src="./image/3.jpg" alt="">
-                    </a>
-                    <div class="portfolio_title">
-                        <div class="portfolio_category">Category</div>
-                        <div class="portfolio_name">Project Name</div>
-                    </div>
+                <a class="portfolio-card" href="./image/3.jpg">
+                    <img class="card_image" src="./image/3.jpg" alt="">
+                </a>
+                <div class="portfolio_title">
+                    <div class="portfolio_category">Category</div>
+                    <div class="portfolio_name">Project Name</div>
                 </div>
+            </div>
 
-                <div  class="portfolio_image">
+            <div class="portfolio_image">
 
-                    <a class="portfolio-card" href="./image/4.jpg">
-                        <img class="card_image" src="./image/4.jpg" alt="">
-                    </a>
-                    <div class="portfolio_title">
-                        <div class="portfolio_category">Category</div>
-                        <div class="portfolio_name">Project Name</div>
-                    </div>
+                <a class="portfolio-card" href="./image/4.jpg">
+                    <img class="card_image" src="./image/4.jpg" alt="">
+                </a>
+                <div class="portfolio_title">
+                    <div class="portfolio_category">Category</div>
+                    <div class="portfolio_name">Project Name</div>
                 </div>
+            </div>
 
-                <div  class="portfolio_image">
+            <div class="portfolio_image">
 
-                    <a class="portfolio-card" href="./image/5.jpg">
-                        <img class="card_image" src="./image/5.jpg" alt="">
-                    </a>
-                    <div class="portfolio_title">
-                        <div class="portfolio_category">Category</div>
-                        <div class="portfolio_name">Project Name</div>
-                    </div>
+                <a class="portfolio-card" href="./image/5.jpg">
+                    <img class="card_image" src="./image/5.jpg" alt="">
+                </a>
+                <div class="portfolio_title">
+                    <div class="portfolio_category">Category</div>
+                    <div class="portfolio_name">Project Name</div>
                 </div>
+            </div>
 
-                <div  class="portfolio_image">
+            <div class="portfolio_image">
 
-                    <a class="portfolio-card" href="./image/6.jpg">
-                        <img class="card_image" src="./image/6.jpg" alt="">
-                    </a>
-                    <div class="portfolio_title">
-                        <div class="portfolio_category">Category</div>
-                        <div class="portfolio_name">Project Name</div>
-                    </div>
+                <a class="portfolio-card" href="./image/6.jpg">
+                    <img class="card_image" src="./image/6.jpg" alt="">
+                </a>
+                <div class="portfolio_title">
+                    <div class="portfolio_category">Category</div>
+                    <div class="portfolio_name">Project Name</div>
                 </div>
+            </div>
         </div>
     </section>
 
     <section class="pagedownload">
         <h2>Free Download at Start Bootstrap!</h2>
-        <button>
-            <a href="#">Download Now!</a>
-        </button>
+        <a href="#">
+            <button>
+                Download Now!
+            </button>
+        </a>
     </section>
     <section class="contact" id="contact">
         <div>
@@ -231,7 +233,7 @@
                         <textarea placeholder="Message" id="infoForm"></textarea>
                     </div>
                     <div>
-                        <input  class="submit" type="submit" value="Submit">
+                        <input class="submit" type="submit" value="Submit">
                     </div>
                 </form>
                 <div class="item">
@@ -249,12 +251,6 @@
 
 
 </body>
-<script>
-    
-</script>
-<script src="./index.js">
- 
-</script>
-
+<script src="./index.js"></script>
 
 </html>
